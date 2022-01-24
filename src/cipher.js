@@ -4,7 +4,9 @@ class cipher{
     let mensajeCifrado = "";
     for (let i = 0; i < string.length; i++) {
       let unaLetra = string.charCodeAt(i);
-      let letraCifrada = (unaLetra - 65 + offset) % 26 + 65;
+      let letraCifrada = ((unaLetra - 65 + offset) % 26) + 65;
+      console.log("valor Ascii" + unaLetra)
+      console.log("valordelaFormula"+ (unaLetra - 65 + offset))
       mensajeCifrado += String.fromCharCode(letraCifrada);
     }
     return mensajeCifrado;

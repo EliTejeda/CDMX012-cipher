@@ -5,7 +5,7 @@ console.log(cipher);
 let btncifrar = document.getElementById("btncifrar");
 btncifrar.addEventListener("click", function () {
     let txtentrada = document.getElementById("txtentrada").value
-    let offset = document.getElementById("offset").value
+    let offset = parseInt(document.getElementById("offset").value)
     let mensajeFinal = cipher.encode(offset, txtentrada);
     window.alert(mensajeFinal);
 })
