@@ -1,12 +1,31 @@
 import cipher from './cipher.js';
 
 console.log(cipher);
+
+let btncifrar = document.getElementById("btncifrar");
+btncifrar.addEventListener("click", function () {
+    let txtentrada = document.getElementById("txtentrada").value
+    let offset = document.getElementById("offset").value
+    let mensajeFinal = cipher.encode(offset, txtentrada);
+    window.alert(mensajeFinal);
+})
+  
+
+
+
+
+
+
+
+
+
+
 //funciones que deben de suceder
 //charCodeAt()
 //ACII
 
-
-//funciones para los botones
+/*
+/*funciones para los botones
 let btncifrar = document.getElementById("btncifrar") // llamando al botón de HTML
 btncifrar.addEventListener("click", cifrar) // Cuando le piquen al botón, realiza la función cifrar
 
@@ -16,7 +35,10 @@ btndecifrar.addEventListener("click", decifrar) // Cuando le piquen al botón, r
 function cifrar() { 
     let mensaje = document.getElementById("txtentrada").value // Agarra el valor de "txtentrada" que metió el usuario
     let offset = document.getElementById("offset").value // Agarra el valor de "offset" que metió el usuario
-    console.log(offset, mensaje) // Muestra esto en la consola
+    let estoCifra = cipher.encode(mensaje. offset)//ERROR CHECAR OFFSETC
+
+    document.getElementById("txtresultado").innerHTML=estoCifra//imprimir resultado de encode en pantalla
+    console.log(estoCifra) // Muestra esto en la consola
 }
     
 function decifrar() {
@@ -24,6 +46,7 @@ function decifrar() {
     let offset = document.getElementById("offset").value
     console.log(offset, mensaje)
 }
+*/
 
 //document.getElementById("txtresultado").innerHTML = "Hola Eli"
 
