@@ -1,6 +1,7 @@
 /*  */
 const cipher= {
-  encode : function(offset, string) {// se declara la funcion que recibe dos parametros
+  encode: function (offset, string) {// se declara la funcion que recibe dos parametros
+    string = string.toUpperCase()// convierte el mensaje del texto a valor de mayusculas sin importar que se escriba en minusculas
     let msjDecode = ""; //variable para guardar el mensaje final
     for (let i = 0; i < string.length; i++) {// ciclo que recorre la cadena de caracteres
       let msjUsuarios = string.charCodeAt(i);// obtiene el valor de ASCII del caracter en la posicion i
@@ -21,7 +22,8 @@ const cipher= {
     
     
   },
-  decode : function(offset, string) {
+  decode: function (offset, string) {
+    string = string.toUpperCase()
     let msjDecode = "";
     for (let i = 0; i < string.length; i++) {
       let msjUsuarios = string.charCodeAt(i);
