@@ -15,24 +15,24 @@
       <h3>
         SUCURSAL  
       </h3>
-      <input type="number" id="offset" min="1" max="20">
+      <input type="number" id="offset" min="1" max="33"> <!--se establece un rango numerico para evitar que salgan numeros negativos-->
       <h3>CÓDIGO O PRODUCTO</h3>
-      <textarea placeholder="introduce tu codigo o producto" id="txtentrada"></textarea>
+      <textarea placeholder="introduce tu codigo o producto" id="txtUsers"></textarea>
       <br>
       <br>
-      <button type="button" id="btncifrar">
+      <button type="button" id="btnEncode">
           CIFRAR
       </button>
       
-      <button type="button" id="btndecifrar">
+      <button type="button" id="btnDecode">
           DECIFRAR
       </button>
       <br>
       <br>
-      <p id="txtresultado"></p>
+      <textarea readonly placeholder="resultado del cifrado y decifrado" id="txtResult"></textarea>
       <br>
       <br>
-      <button type="button" id="btnlimpiar">
+      <button type="button" id="btnClear">
            LIMPIAR
       </button>
   

@@ -1,20 +1,42 @@
 /*  */
-class cipher{
-  static encode(offset, string) {
-    let mensajeCifrado = "";
-    for (let i = 0; i < string.length; i++) {
-      let unaLetra = string.charCodeAt(i);
-      let letraCifrada = ((unaLetra - 65 + offset) % 26) + 65;
-      console.log("valor Ascii" + unaLetra)
-      console.log("valordelaFormula"+ (unaLetra - 65 + offset))
-      mensajeCifrado += String.fromCharCode(letraCifrada);
+const cipher= {
+  encode : function(offset, string) {// se declara la funcion que recibe dos parametros
+    let msjDecode = ""; //variable para guardar el mensaje final
+    for (let i = 0; i < string.length; i++) {// ciclo que recorre la cadena de caracteres
+      let msjUsuarios = string.charCodeAt(i);// obtiene el valor de ASCII del caracter en la posicion i
+      let msjAscii= 0
+      if (msjUsuarios >= 65 && msjUsuarios <= 90) {
+        msjAscii = ((msjUsuarios - 65 + offset) % 26) + 65;
+      }
+      else {
+        msjAscii = msjUsuarios
+      }
+      
+      console.log("valueAscii" + msjUsuarios)
+      console.log("valueFormula"+ (msjUsuarios - 65 + offset))
+      msjDecode += String.fromCharCode(msjAscii);//convertir el codigo ASCII codificado a caracter
     }
-    return mensajeCifrado;
+    return msjDecode;// regresamos el mensaje codificado
+
     
     
-  }
-  static decode(offset, string) {
-    return "cad2";
+  },
+  decode : function(offset, string) {
+    let msjDecode = "";
+    for (let i = 0; i < string.length; i++) {
+      let msjUsuarios = string.charCodeAt(i);
+      let msjAscii = 0
+      if (msjUsuarios >= 65 && msjUsuarios <= 90) {
+        msjAscii = ((msjUsuarios - 65 - offset) % 26) + 65;
+      }
+      else {
+        msjAscii = msjUsuarios
+      }
+      console.log("valueAscii" + msjUsuarios)
+      console.log("valueFormula" + (msjUsuarios - 65 - offset))
+      msjDecode += String.fromCharCode(msjAscii);
+    }
+    return msjDecode;
 
   }
 
@@ -26,12 +48,12 @@ const cipher = {
   // ...
   encode: function cifrar(string, offset) {
   
-  let unaletra = string.charCodeAt()
-    let formula = (unaletra - 65 + offset) % 26 + 65
+  let msjUsuarios = string.charCodeAt()
+    let formula = (msjUsuarios - 65 + offset) % 26 + 65
     (x-65+n)%26+65
   
-  let letraCifrada =  formula.fromCharCode()
-  return letraCifrada
+  let msjAscii =  formula.fromCharCode()
+  return msjAscii
   }
  
 
