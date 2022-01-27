@@ -13,8 +13,8 @@ const cipher= {
         msjAscii = msjUsuarios
       }
       
-      console.log("valueAscii" + msjUsuarios)
-      console.log("valueFormula"+ (msjUsuarios - 65 + offset))
+      /*console.log("valueAscii" + msjUsuarios)
+      console.log("valueFormula"+ (msjUsuarios - 65 + offset))*/
       msjDecode += String.fromCharCode(msjAscii);//convertir el codigo ASCII codificado a caracter
     }
     return msjDecode;// regresamos el mensaje codificado
@@ -23,31 +23,30 @@ const cipher= {
     
   },
   decode: function (offset, string) {
-    // if (string < 0) {
-      //string += 26
-    //} 
-    console.log("formaNormal " + string)
+    
+    //console.log("formaNormal " + string)
     string = string.toUpperCase()
-    console.log("toUpperCase " + string)
+    //console.log("toUpperCase " + string)
     let msjDecode = "";
     for (let i = 0; i < string.length; i++) {
       
       let msjUsuarios = string.charCodeAt(i);
       let msjAscii = 0
-      let formulaDecode = msjUsuarios - offset % 26
+      let formulaDecode = msjUsuarios - offset % 26 //formula para decodificar el mensaje
       if (formulaDecode < 65)
-        formulaDecode += 26
-      if (formulaDecode >= 65 && formulaDecode <= 90) {
-        msjAscii = formulaDecode
+        formulaDecode += 26// para evitar que tome valores negativos 
+      if (formulaDecode >= 65 && formulaDecode <= 90) {// se evalua el rango caracter entre la A y la Z
+        msjAscii = formulaDecode// se toma el caracter decodificado de la formula
 
       }
-      else { msjAscii = msjUsuarios }
+      else { msjAscii = msjUsuarios }//si no esta en el rango A-Z se queda igual
 
       
-      console.log("valueAscii" + msjUsuarios)
-      console.log("valueFormula" + (msjUsuarios - 65 - offset))
+      /*console.log("valueAscii" + msjUsuarios)
+      console.log("valueFormula" + (msjUsuarios - 65 - offset))*/
       msjDecode += String.fromCharCode(msjAscii);
     }
+    //console.log("msjDecode " + msjDecode)
     return msjDecode;
 
   }

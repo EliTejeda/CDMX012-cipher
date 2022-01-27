@@ -26,7 +26,7 @@ let btnDecode = document.getElementById("btnDecode");//llamando al boton de HTML
 btnDecode.addEventListener("click", function () { //ejecutar la funcion cifrar
     let txtUsers = document.getElementById("txtUsers").value // activar que el cifrado suceda en la caja de texto
     let offset = parseInt(document.getElementById("offset").value) //que el numero del offset se convierta a numero entero
-    let msjFinalDecode = cipher.decode(26 - offset, txtUsers); // se ejecute el cipher usando el offset que elija el usuario y el texto que coloque
+    let msjFinalDecode = cipher.decode(offset, txtUsers); // se ejecute el cipher usando el offset que elija el usuario y el texto que coloque
     //window.alert(msjFinalDecode);//que se muestre como alerta
     txtResult.value = msjFinalDecode
 })
