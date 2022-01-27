@@ -23,17 +23,39 @@ const cipher= {
     
   },
   decode: function (offset, string) {
+    // if (string < 0) {
+      //string += 26
+    //} 
+    console.log("formaNormal " + string)
     string = string.toUpperCase()
+    console.log("toUpperCase " + string)
     let msjDecode = "";
     for (let i = 0; i < string.length; i++) {
+      
       let msjUsuarios = string.charCodeAt(i);
       let msjAscii = 0
-      if (msjUsuarios >= 65 && msjUsuarios <= 90) {
-        msjAscii = ((msjUsuarios - 65 - offset) % 26) + 65;
+      let offsetReducido = 26 % offset
+      //if msjUsuarios - offsetReducido
+      /*let offsetReducido = 26  % offset
+      if (msjUsuarios - offsetReducido >= 65 && msjUsuarios - offsetReducido <= 90) {
+        msjAscii = msjUsuarios - offsetReducido
       }
       else {
         msjAscii = msjUsuarios
+      }*/
+    
+      /*if (msjUsuarios >= 65 && msjUsuarios <= 90) {
+        let sumaOffset = msjUsuarios - 65 - offset
+        if (sumaOffset <= 0)
+       sumaOffset = sumaOffset + 26  
+        msjAscii = ((sumaOffset)) % 26 + 65;
+       // if (msjAscii < 65)
+        //  msjAscii = msjAscii + 26 
       }
+      else {
+        msjAscii = msjUsuarios
+      }*/
+      console.log("offsetReducido " + offsetReducido)
       console.log("valueAscii" + msjUsuarios)
       console.log("valueFormula" + (msjUsuarios - 65 - offset))
       msjDecode += String.fromCharCode(msjAscii);
