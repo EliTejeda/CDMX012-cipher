@@ -8,12 +8,28 @@ background-color: skyblue;
 font-size: 72px;
 } */
 h1{
-color:slateblue
+color:rgb(210, 246, 6)
 }
-.body{
-    width: 100%;
+h3{
+    color:fuchsia
+}
+body{
+    /*FONDO*/
+    background-image: url(https://dam.cosmoenespanol.com/wp-content/uploads/2021/04/cafes-de-gatos-que-debes-conocer-si-amas-a-los-animales.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /*background-color: darkslateblue;*/
+    /* background-attachment: fixed;*/
+    /*background-position: center center*/ 
+   /* width: 100%;
     height:  100%;
     display flex;
     justify-content: center;
-    align-items: center;
+    align-items: center;*/
+    
 }
+
+
+
+

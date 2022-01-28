@@ -24,7 +24,6 @@ const cipher= {
   },
   decode: function (offset, string) {
     
-    //console.log("formaNormal " + string)
     string = string.toUpperCase()
     //console.log("toUpperCase " + string)
     let msjDecode = "";
@@ -40,8 +39,6 @@ const cipher= {
 
       }
       else { msjAscii = msjUsuarios }//si no esta en el rango A-Z se queda igual
-
-      
       /*console.log("valueAscii" + msjUsuarios)
       console.log("valueFormula" + (msjUsuarios - 65 - offset))*/
       msjDecode += String.fromCharCode(msjAscii);
