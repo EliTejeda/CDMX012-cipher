@@ -10,45 +10,42 @@
   </head>
 
   <body>
-    <seccion>
-      <h1>PIZZA CAT</h1>
+    <seccion class= "rewards-log">
+      <h1>PIZZA CAT</h1><!--nombre de la empresa y logo-->
       <h3>
-        Clave de sucursal  
-      </h3>
-      <input type="number" id="offset" min="1" max="33"> <!--se establece un rango numerico para evitar que salgan numeros negativos-->
-      <h3>Código o Producto</h3>
-      <textarea placeholder="Introduce código o producto" id="txtUsers"></textarea>
+        Clave de sucursal  <!--nombre de offfset-->
+      </h2>
+      <input class="box-offset" type="number" id="offset" min="1" max="33"> <!--caja de offset, se establece un rango numerico para evitar que salgan numeros negativos-->
+      <h3>Código o Producto</h3><!--nombre de caja de texto para que el usuario escriba -->
+      <textarea class="box-text" placeholder="Introduce código o producto" id="txtUsers"></textarea><!-- caja de texto para que usuario escriba-->
       <br>
       <br>
-      <button type="button" id="btnEncode">
+      <button class="button-style" type="button" id="btnEncode">
           Generar premio
       </button>
       
-      <button type="button" id="btnDecode">
+      <button class="button-style" type="button" id="btnDecode">
           Canjear premio
       </button>
       <br>
       <br>
-      <textarea readonly placeholder="Disfruta de:" id="txtResult"></textarea>
+      <textarea class="box-text" readonly placeholder="Disfruta de:" id="txtResult"></textarea> <!--caja de3 resultado solo de lectura-->
       <br>
       <br>
-      <button type="button" id="btnClear">
+      <button class="button-style" type="button" id="btnClear">
            Borrar
       </button>
     </seccion>
-    <P> GATO</P>
-    <P> GATO</P>
-    <P> GATO</P>
-    <P> GATO</P>
-    <P> GATO</P>
-    <P> GATO</P>
-    <P> GATO</P>
-    <P> GATO</P>
-    <P> GATO</P>
-    <P> GATO</P>
-    <P> GATO</P>
-    <P> GATO</P>
+
+    <aside>
+      Historia
+      Sucursales
+      Refugio animal
+       </aside>
+
+    <foter>Aviso de privacidad  |  © 2022 Pizzacatmx.com, web by Eli Tejeda </foter>
     
+
   
     <script src="index.js" type="module"></script>
   
