@@ -1,57 +1,76 @@
-*{
-    margin: 0
-    padding: 0
+ *{
+    margin: 0px;
+    padding: 0px;
     box-sizing:border-box;
 }
 
 h1{
-color:rgb(210, 246, 6)
+    font-family:"Roboto Condensed" , sons-serif;
+color:rgb(231, 233, 220)
 }
+
 h3{
-    color:fuchsia
+    font-family:"Roboto Condensed" , sons-serif;
+    color:rgb(245, 240, 245)
 }
+
 body{
     /*FONDO*/
-    background-image: url(https://dam.cosmoenespanol.com/wp-content/uploads/2021/04/cafes-de-gatos-que-debes-conocer-si-amas-a-los-animales.jpg);
+   background-image: url(https://dam.cosmoenespanol.com/wp-content/uploads/2021/04/cafes-de-gatos-que-debes-conocer-si-amas-a-los-animales.jpg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    /*background-color: darkslateblue;*/
-    /* background-attachment: fixed;*/
-    /*background-position: center center*/ 
-   /* width: 100%;
-    height:  100%;
-    display flex;
-    justify-content: center;
-    align-items: center;*/
+
+   
 
 }
 .rewards-log {
-    width: 400px;
-    background: rgba(156, 119, 102, 0.4);
-    padding: 30px;
-    margin:auto
-    margin-top: 100px;
-
-
+    width: 800px;
+    background: rgba(14, 13, 13, 0.7);
+    padding: 20px;
+    margin:auto;
+    margin-top: 800px;
+    border-radius: 2px;
+    font-family:"Roboto Condensed", sons-serif;
+    display: flex;
+    flex-flow: column wrap;
+    width: 80%;
+    margin: 0 auto;
+    align-items: sterch;
+    align-content: center;
 }
+
 .box-offset{
+    font-family:"Roboto Condensed" , sons-serif;
 
 }
 .box-text{
+    font-family:"Roboto Condensed" , sons-serif;
 
 }
 .button-style{
-
+    font-family:monospace;
+    width: 100px;
+    background: rgba(136, 43, 148, 0.7);
+    padding: 2%;
+    margin: 2%;
+    margin-top: 1px;
+    border-radius: 30px;
+    align-items: center; 
+    
 }
 
-/*esto es una practica de css
-.bg-skyblue{
-background-color: skyblue;
+aside {
+    font-family:"Roboto Condensed" , sons-serif;
+    color: rgb(231, 233, 220); 
 }
 
-.text-32{
-font-size: 72px;
-} */
+footer {
+    font-family:"Roboto Condensed" , sons-serif;
+    color:rgb(231, 233, 220);
+}
+
+
+
 
 

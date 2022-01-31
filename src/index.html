@@ -4,48 +4,72 @@
     <meta charset="utf-8">
     <title>Caesar Cipher</title>
     <link rel="stylesheet" href="style.css" />
-    <!--prueba viewport
+    <!--prueba viewport 
     <meta name="viewport"content="width=device-initial-scale=1.0">
   -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;1,700&display=swap"
+    rel="stylesheet">
   </head>
 
   <body>
-    <seccion class= "rewards-log">
-      <h1>PIZZA CAT</h1><!--nombre de la empresa y logo-->
-      <h3>
-        Clave de sucursal  <!--nombre de offfset-->
-      </h2>
-      <input class="box-offset" type="number" id="offset" min="1" max="33"> <!--caja de offset, se establece un rango numerico para evitar que salgan numeros negativos-->
-      <h3>Código o Producto</h3><!--nombre de caja de texto para que el usuario escriba -->
-      <textarea class="box-text" placeholder="Introduce código o producto" id="txtUsers"></textarea><!-- caja de texto para que usuario escriba-->
+    <div class= class="rewards-log">
+     
       <br>
       <br>
-      <button class="button-style" type="button" id="btnEncode">
-          Generar premio
-      </button>
+      <seccion>
+
+        <h1>PIZZA CAT</h1>
+        <!--nombre de la empresa y logo-->
+        <h3>
+          Clave de sucursal
+          <!--nombre de offfset-->
+        </h3>
+
+        <input class="box-offset" type="number" id="offset" min="1" max="33">
+          <!--caja de offset, se establece un rango numerico para evitar que salgan numeros negativos-->
+        <h3>Código o Producto</h3>
+          <!--nombre de caja de texto para que el usuario escriba -->
+        <textarea class="box-text" placeholder="Introduce código o producto" id="txtUsers"></textarea>
+          <!-- caja de texto para que usuario escriba-->
+          <br>
+          <br>
+          
+        <button class="button-style" type="button" id="btnEncode">
+            Generar premio
+        </button>
       
-      <button class="button-style" type="button" id="btnDecode">
-          Canjear premio
-      </button>
-      <br>
-      <br>
-      <textarea class="box-text" readonly placeholder="Disfruta de:" id="txtResult"></textarea> <!--caja de3 resultado solo de lectura-->
-      <br>
-      <br>
-      <button class="button-style" type="button" id="btnClear">
-           Borrar
-      </button>
-    </seccion>
+        <button class="button-style" type="button" id="btnDecode">
+            Canjear premio
+        </button>
+         
+          <br>
+          <br>
+          
+        <textarea class="box-text" readonly placeholder="Disfruta de:" id="txtResult"></textarea>
+          <!--caja de3 resultado solo de lectura-->
+          <br>
+          <br>
+          
+        <button class="button-style" type="button" id="btnClear">
+            Borrar
+        </button>
+         
+        <aside>
+            Historia
+            Sucursales
+            Refugio Animal
+        </aside>
+        
+        <br>
+         <br>        
 
-    <aside>
-      Historia
-      Sucursales
-      Refugio animal
-       </aside>
-
-    <foter>Aviso de privacidad  |  © 2022 Pizzacatmx.com, web by Eli Tejeda </foter>
+        <footer>Aviso de privacidad | © 2022 Pizzacatmx.com Web by Eli Tejeda </footer>
+      
+      </seccion>
+    </div>
     
-
   
     <script src="index.js" type="module"></script>
   
