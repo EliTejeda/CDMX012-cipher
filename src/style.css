@@ -17,7 +17,7 @@ h3{
 body{
     /*FONDO*/
    
-   background-image: url(https://dam.cosmoenespanol.com/wp-content/uploads/2021/04/cafes-de-gatos-que-debes-conocer-si-amas-a-los-animales.jpg);
+   background-image: url(imagenes/fondoPizzacat.jpg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -30,17 +30,15 @@ body{
 .rewards-log {
     width: 800px;
     background: rgba(14, 13, 13, 0.7);
-    padding: 20px;
+    padding: 50%, 20%, 50%, 20%;
     margin:auto;
-    margin-top: 800px;
-    border-radius: 2px;
+    border-radius: 5px, 5px, 5px, 5px;
     font-family:"Roboto Condensed", sons-serif;
     display: flex;
     flex-flow: column wrap;
-    width: 80%;
-    margin: 0 auto;
-    align-items: sterch;
+    align-items: center;
     align-content: center;
+    text-align: center;
 }
 
 .box-offset{
