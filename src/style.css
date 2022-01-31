@@ -43,21 +43,36 @@ body{
 
 .box-offset{
     font-family:"Roboto Condensed" , sons-serif;
+    font-size: 12pt;
+    font-weight: bolder;
+    text-align: center;
+    color:purple
+    
 
 }
 .box-text{
     font-family:"Roboto Condensed" , sons-serif;
+    font-size: 12pt;
+    padding-top: 11px;
+    text-align: center;
+    font-weight: bold;
+    color:purple
+    
+    
 
 }
 .button-style{
     font-family:monospace;
     width: 100px;
-    background: rgba(136, 43, 148, 0.7);
+    font-size: 12pt;
+    background: rgb(240, 129, 255);
     padding: 2%;
     margin: 2%;
     margin-top: 1px;
     border-radius: 30px;
-    align-items: center; 
+    align-items: center;
+    font-weight: bolder;
+    color:purple 
     
 }
 
