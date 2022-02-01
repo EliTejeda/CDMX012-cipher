@@ -1,5 +1,5 @@
-/*  */
-const cipher= {
+
+const cipher = {
   encode: function (offset, string) {// se declara la funcion que recibe dos parametros
     string = string.toUpperCase()// convierte el mensaje del texto a valor de mayusculas sin importar que se escriba en 
     let msjDecode = ""; //variable para guardar el mensaje final

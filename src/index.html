@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Caesar Cipher</title>
 
-    <link rel="stylesheet" href="style.css" />
+<head>
+  <meta charset="utf-8">
+  <title>Caesar Cipher</title>
 
-    <!--prueba viewport 
+  <link rel="stylesheet" href="style.css" />
+
+  <!--prueba viewport 
     <meta name="viewport"content="width=device-initial-scale=1.0">
   -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,93 +15,94 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;1,700&display=swap"
     rel="stylesheet">
 
-  </head>
+</head>
 
-  <body>
-    <br>
-    <br>
-    <br>
+<body>
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <div class="rewards-log">
     <br>
 
-  <div class= "rewards-log">
     <br>
-
     <br>
-      <br>
-                   <!--Logo de Pizza Cat-->
+    <!--Logo de Pizza Cat-->
     <seccion>
-       <img src="imagenes/logoPizzaCat2Blanco.png" width="250" height="200"> 
-        <br> 
-              <!--Titulo de la sección que hará cipher-->
-        <h1>* RECOMPENSAS *</h1>
-        
-        <br>
-                 
-        <h4>
-          Clave de sucursal <!--nombre de offfset-->
-        </h4>
+      <img src="imagenes/logoPizzaCat2Blanco.png" width="250" height="200">
+      <br>
+      <!--Titulo de la sección que hará cipher-->
+      <h1>* RECOMPENSAS *</h1>
 
-        <br>
+      <br>
 
-             <!--caja de offset, se establece un rango numerico para evitar que salgan numeros negativos-->
-        <input class="box-offset" type="number" id="offset" min="1" max="33"> 
-        <br>
-        <br>
-          <!--nombre de caja de texto para que el usuario escriba -->
-        <h4>
-          Código / Recompensa
-        </h4>
+      <h4>
+        Clave de sucursal
+        <!--nombre de offfset-->
+      </h4>
 
-        <br>
-        <!--Caja donde el usuario escribe-->
-         <textarea class="box-text" placeholder="Introduce código o recompensa:" id="txtUsers"></textarea>
-          
-        <br>
-        <br>
-           <!--Boton cifrado-->
-        <button class="button-style" type="button" id="btnEncode">
-            GENERAR PREMIO
-        </button>
-           <!--Boton decifrado-->
-        <button class="button-style" type="button" id="btnDecode">
-            CANJEAR PREMIO
-        </button>
-         
-        <br>
-        <br>
-          <!--Caja de texto solo se muestra el resultado solo para leer-->
-        <textarea class="box-text" readonly placeholder="Disfruta de:" id="txtResult"></textarea>
-          
-        <br>
-        <br>
-          <!--Boton para limpiar la escritura-->
-        <button class="button-style" type="button" id="btnClear">
-            BORRAR
-        </button>
-       
-       
-       
-        <br>
-        <br>        
-       <!--copy rights-->
-       <footer>Aviso de privacidad | © 2022 Pizzacatmx.com | Website by Eli Tejeda </footer>
-       <br>
-       <br>
+      <br>
+
+      <!--caja de offset, se establece un rango numerico para evitar que salgan numeros negativos-->
+      <input class="box-offset" type="number" id="offset" min="1" max="33">
+      <br>
+      <br>
+      <!--nombre de caja de texto para que el usuario escriba -->
+      <h4>
+        Código / Recompensa
+      </h4>
+
+      <br>
+      <!--Caja donde el usuario escribe-->
+      <textarea class="box-text" placeholder="Introduce código o recompensa:" id="txtUsers"></textarea>
+
+      <br>
+      <br>
+      <!--Boton cifrado-->
+      <button class="button-style" type="button" id="btnEncode">
+        GENERAR PREMIO
+      </button>
+      <!--Boton decifrado-->
+      <button class="button-style" type="button" id="btnDecode">
+        CANJEAR PREMIO
+      </button>
+
+      <br>
+      <br>
+      <!--Caja de texto solo se muestra el resultado solo para leer-->
+      <textarea class="box-text" readonly placeholder="Disfruta de:" id="txtResult"></textarea>
+
+      <br>
+      <br>
+      <!--Boton para limpiar la escritura-->
+      <button class="button-style" type="button" id="btnClear">
+        BORRAR
+      </button>
+
+
+
+      <br>
+      <br>
+      <!--copy rights-->
+      <footer>Aviso de privacidad | © 2022 Pizzacatmx.com | Website by Eli Tejeda </footer>
+      <br>
+      <br>
       <!--Algunas opciones de secciones sin habilitar-->
-       <div class="container-nav">
-          <nav>
-            Historia -  Sucursales -  Refugio Animal
-          </nav>
-        </div>
-         <br>
-        <br>
-     </seccion>
+      <div class="container-nav">
+        <nav>
+          Historia - Sucursales - Refugio Animal
+        </nav>
+      </div>
+      <br>
+      <br>
+    </seccion>
   </div>
-    <br>
-    
-  
-  <script src="index.js" type="module"></script>
-  
-  </body>
-  
+  <br>
+
+
+   <script src="index.js" type="module"></script>
+
+</body>
+
 </html>
