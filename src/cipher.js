@@ -4,6 +4,7 @@ const cipher= {
     string = string.toUpperCase()// convierte el mensaje del texto a valor de mayusculas sin importar que se escriba en 
     let msjDecode = ""; //variable para guardar el mensaje final
     for (let i = 0; i < string.length; i++) {// ciclo que recorre la cadena de caracteres
+     
       let msjUsuarios = string.charCodeAt(i);// obtiene el valor de ASCII del caracter en la posicion i
       let msjAscii= 0
       if (msjUsuarios >= 65 && msjUsuarios <= 90) {
@@ -15,7 +16,7 @@ const cipher= {
       
       /*console.log("valueAscii" + msjUsuarios)
       console.log("valueFormula"+ (msjUsuarios - 65 + offset))*/
-      msjDecode += String.fromCharCode(msjAscii);//convertir el codigo ASCII codificado a caracter
+      msjDecode += String.fromCharCode(msjAscii);//convertir el codigo ASCII codificado a caracter, guardar cada caracter que surga de la cadena, es para acumular el mensaje y le sume el nuevo caracter
     }
     return msjDecode;// regresamos el mensaje codificado
 
@@ -31,9 +32,9 @@ const cipher= {
       
       let msjUsuarios = string.charCodeAt(i);
       let msjAscii = 0
-      let formulaDecode = msjUsuarios - offset % 26 //formula para decodificar el mensaje
+      let formulaDecode = msjUsuarios - offset % 26 //formula para decodificar el mensaje para saber el corrimiento de los caracteres hacia atras
       if (formulaDecode < 65)
-        formulaDecode += 26// para evitar que tome valores negativos 
+        formulaDecode += 26// para evitar que tome valores negativos, habia que sumarle 26 psrs que siguiera con las demas letras
       if (formulaDecode >= 65 && formulaDecode <= 90) {// se evalua el rango caracter entre la A y la Z
         msjAscii = formulaDecode// se toma el caracter decodificado de la formula
 
