@@ -1,6 +1,6 @@
 import cipher from './cipher.js';
 
-console.log(cipher); //mostrar en la consola
+//console.log(cipher); //mostrar en la consola
     
 let txtResult = document.getElementById("txtResult")//jalar el area de texto del DOM
 let btnClear = document.getElementById("btnClear")//jalar el boton de limpiar del DOM

@@ -6,7 +6,9 @@
 
 h1{
     font-family:"Roboto Condensed" , sons-serif;
-color:rgb(245, 240, 245)
+    color:rgb(245, 240, 245)
+    
+
 }
 
 h4{
@@ -27,6 +29,7 @@ body{
 
 }
 .rewards-log {
+    /*Caja de fondo transparente*/
     width: 600px;
     background: rgba(14, 13, 13, 0.7);
     padding: 50%, 20%, 50%, 20%;
@@ -87,15 +90,18 @@ body{
     
 }
 
+footer {
+    font-family:"Roboto Condensed" , sons-serif;
+    color:rgb(231, 233, 220);
+}
+
+
 nav {
     font-family:"Roboto Condensed" , sons-serif;
     color: rgb(231, 233, 220); 
 }
 
-footer {
-    font-family:"Roboto Condensed" , sons-serif;
-    color:rgb(231, 233, 220);
-}
+
 
 .container-nav{
     width: 600px;
